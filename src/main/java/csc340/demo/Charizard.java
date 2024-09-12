@@ -1,11 +1,14 @@
 package csc340.demo;
+
+import java.util.Arrays;
+
 public class Charizard {
     private String name;
     private int height;
     private int weight;
     private String[] abilities;
 
-    // Getter and Setter for Name
+    // Getters and Setters
     public String getName() {
         return name;
     }
@@ -14,7 +17,6 @@ public class Charizard {
         this.name = name;
     }
 
-    // Getter and Setter for Height
     public int getHeight() {
         return height;
     }
@@ -23,7 +25,6 @@ public class Charizard {
         this.height = height;
     }
 
-    // Getter and Setter for Weight
     public int getWeight() {
         return weight;
     }
@@ -32,7 +33,6 @@ public class Charizard {
         this.weight = weight;
     }
 
-    // Getter and Setter for Abilities
     public String[] getAbilities() {
         return abilities;
     }
@@ -41,14 +41,13 @@ public class Charizard {
         this.abilities = abilities;
     }
 
-    // toString method for easy printing
     @Override
     public String toString() {
         return "Charizard{" +
                 "name='" + name + '\'' +
                 ", height=" + height +
                 ", weight=" + weight +
-                ", abilities=" + String.join(", ", abilities) +
+                ", abilities=" + Arrays.toString(abilities) +
                 '}';
     }
 }
